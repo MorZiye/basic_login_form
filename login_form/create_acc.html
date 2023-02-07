@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MorZiCo - Create account</title>
+    <link rel="stylesheet" href="/css/form_style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet"> 
+    <link rel="icon" href="/photo/M.png">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        form{
+            width:100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin: 0px 15%; */
+        }
+        input{
+            margin-bottom:0px;
+        }
+
+        a.terms_and_conditions{
+            font-size: medium;
+            padding:0px;
+            margin: 0px;
+            color: brown;
+            text-decoration: underline;
+
+        }
+        a.terms_and_conditions:hover{
+            color: white;
+        }
+
+        input#terms_and_conditions{
+            width:20px;
+            height: 20px;
+            display: inline-block;
+            margin:30px 5px 30px 10%;
+            background-color: rgb(40, 40, 40, 0.1);
+        }
+
+        label.terms_and_conditions{
+
+            display: inline-block;
+            width: fit-content;
+            margin: 0px;
+            height: 30px;
+            padding: 0px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- <p>wanna create acc? go and cry.</p>
+    <a href="login_form.html">Go back.</a> -->
+    <form action="">
+        <fieldset>
+            <h1 class="company_name">MorZiCo</h1>
+
+            <label for="name">Username</label>
+            <input type="text" id="name" required autofocus>
+
+            <label for="email">Email</label>
+            <input type="email" id="email"  required>
+
+            <label for="phone">Phone number</label>
+            <input type="phone" id="phone" required>
+
+            <label for="password">Password</label>
+            <input type="text" id="password" required>
+
+            <label for="confirm_password">Confirm your password</label>
+            <input type="text" id="confirm_password" required>
+
+            <input type="checkbox" value="yes" id="terms_and_conditions" required> 
+            <label class="terms_and_conditions" for="terms_and_conditions">I agree to the <a class="terms_and_conditions" href="terms_and_conditions.html">terms and conditions</a>.</label>
+
+            <input type="submit" class="submitbtn" value="Sign up" >
+
+            <a href="/login_form/login_form.html" class="form_link go_back">Go back</a>
+        </fieldset>
+    </form>
+</body>
+</html>

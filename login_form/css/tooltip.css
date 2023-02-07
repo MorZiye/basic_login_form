@@ -1,0 +1,38 @@
+.tooltip{
+    position: relative;
+    /* display: inline-block; */
+    width: 100%;
+    /* border-bottom: 1px dotted aqua; */
+}
+.tooltip span.tooltip_text{
+    visibility: hidden;
+    /* width:auto; */
+    background-color: rgba(224, 224, 224, 0.75);
+    color: brown;
+    text-align: center;
+    border-radius: 5px;
+    padding: 15px ;
+    font-size: small;
+    
+
+    position: absolute;
+
+    /* bottom* */
+    /* top: 105%;
+    left: 50%;
+    transform: translate(-50%,-100%); */
+    
+    /* top*
+    bottom: 125%;
+    left:50%;
+    transform: translate(-50%,0%); */
+
+    left:105%;
+    transition-delay: 0.25s;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltip_text{
+    visibility: visible;
+}
+

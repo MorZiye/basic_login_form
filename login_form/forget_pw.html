@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MorZiCo - Forget password</title>
+    <link rel="stylesheet" href="tooltip.css">
+
+    <link rel="stylesheet" href="/css/form_style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/photo/M.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet"> 
+    <style>
+        form{
+            width:100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        p{
+            padding:15px 10%;
+            text-align: justify;
+        }
+
+        input.submitbtn{
+            margin-bottom: 30px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- <p>Forget password? Noob.</p>
+    <a href="login_form.html">Go back.</a> -->
+    <form action="">
+        <fieldset>
+            <h1 class="company_name">MorZiCo</h1>
+            <p>
+                In order to reset the password, enter your email below.
+            </p>
+            <label for="forget_password_email">Enter your email</label>
+            <input type="email" id="forget_password_email" required autofocus novalidate>
+
+            <div class="tooltip">
+                <input id="reset_password" type="submit" class="submitbtn" value="Reset password" >
+                <span class="tooltip_text boxshadow">Reset your password</span>
+            </div>
+
+            <p>
+                We will send a link and a verification code to your email. You can reset and set new password there.
+            </p>
+            <a href="login_form.html" class="go_back form_link">Go back</a>
+
+               </fieldset>
+    </form>
+    <a href="varification.html">Go to varification page</a>
+</body>
+</html>
